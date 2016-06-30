@@ -1,0 +1,30 @@
+{
+  "name": "countdown.js",
+  "version": "1.0.0",
+  "description": "Very lightweight, no dependencies Countdown Timer that provides a simple API to get various time formats",
+  "main": "countdown.js",
+  "scripts": {
+    "build": "npm run build:scripts",
+    "build:scripts": "uglifyjs ./index.js -o dist/countdown.min.js -c -m | browserify -g uglifyify ./demo/js/index.js > ./demo/js/bundle.js",
+    "prepublish": "npm run build",
+    "prebuild": "npm run test",
+    "test": "jshint . && tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audiolion/countdown.js.git"
+  },
+  "author": "Ryan Castner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/audiolion/countdown.js/issues"
+  },
+  "homepage": "https://github.com/audiolion/countdown.js#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "jshint": "^2.9.2",
+    "tape": "^4.6.0",
+    "uglify-js": "^2.6.4",
+    "uglifyify": "^3.0.2"
+  }
+}
