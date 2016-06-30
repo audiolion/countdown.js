@@ -1,6 +1,6 @@
 {
   "name": "countdown-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Very lightweight, no dependencies Countdown Timer that provides a simple API to get various time formats",
   "main": "countdown.js",
   "scripts": {
