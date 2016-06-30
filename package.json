@@ -1,5 +1,5 @@
 {
-  "name": "countdown.js",
+  "name": "countdown-js",
   "version": "1.0.0",
   "description": "Very lightweight, no dependencies Countdown Timer that provides a simple API to get various time formats",
   "main": "countdown.js",
@@ -14,7 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/audiolion/countdown.js.git"
   },
-  "author": "Ryan Castner",
+  "author": {
+    "name": "Ryan Castner",
+    "email": "ryancastner@msn.com",
+    "url": "https://ryancastner.coffee"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/audiolion/countdown.js/issues"
