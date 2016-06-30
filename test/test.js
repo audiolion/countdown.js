@@ -20,5 +20,5 @@ test('timing test', function(t) {
   t.equal(time.minutes, 0, true)
   t.equal(time.hours, 0, true)
   t.equal(time.days, 0, true)
-  t.timeoutAfter(8000)
+  t.timeoutAfter(10000)
 });
