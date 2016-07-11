@@ -1,5 +1,5 @@
 # countdown.js
-Very lightweight, no dependencies Countdown Timer that provides a simple API to get various time formats
+Very lightweight (0.39kb minified and gzipped), no dependencies Countdown Timer that provides a simple API to get various time formats
 
 ## Install
 
