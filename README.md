@@ -54,8 +54,14 @@ Set up the development environment
 npm install
 ```
 
+After making changes run the following from the root countdown.js folder to test the demo and ensure it still works
+
+```shell
+uglifyjs ./index.js -o dist/countdown.min.js -c -m | browserify -g uglifyify demo/js/index.js > demo/js/bundle.js
+```
+
 Make any changes, update `test/*.js` files as appropriate.
 
-Before committing run `npm test` to ensure all tests pass
+Before committing run `npm run test` to ensure all tests pass
 
 Make a pull request! Thanks!

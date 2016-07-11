@@ -1,6 +1,6 @@
 {
   "name": "countdown-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Very lightweight, no dependencies Countdown Timer that provides a simple API to get various time formats",
   "main": "countdown.js",
   "scripts": {
@@ -27,6 +27,7 @@
   "devDependencies": {
     "browserify": "^13.0.1",
     "jshint": "^2.9.2",
+    "promise": "^7.1.1",
     "tape": "^4.6.0",
     "uglify-js": "^2.6.4",
     "uglifyify": "^3.0.2"

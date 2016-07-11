@@ -13,7 +13,7 @@ Countdown.timer = function(end, onTick, onComplete) {
   }
 
   var tick = function() {
-    if(timeLeft > -1) {
+    if(timeLeft > 0) {
       var time = timeLeft
       var days = Math.floor(time / (timeAPI.DAYS))
       time %= timeAPI.DAYS
@@ -32,6 +32,7 @@ Countdown.timer = function(end, onTick, onComplete) {
       onTick(countdown)
       timeLeft -= 1000
     }else {
+      timeLeft -= 1000
       clearInterval(interval),
       onComplete()
     }
