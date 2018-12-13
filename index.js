@@ -2,8 +2,11 @@
 
 var Countdown = function(){}
 
-Countdown.timer = function(end, onTick, onComplete) {
-  var timeLeft = end - new Date();
+Countdown.timer = function(end, onTick, onComplete, start) {
+  if(!start) {
+    start = new Date()
+  }
+  var timeLeft = end - start;
 
   var timeAPI = {
     DAYS: 1000 * 60 * 60 * 24,
