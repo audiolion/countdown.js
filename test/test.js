@@ -40,3 +40,16 @@ test('transition test', function (t) {
   })
   t.end()
 })
+
+test('custom start time test', function (t) {
+  var now = new Date()
+  var startTime = new Date(now.getTime() - 20 * 1000) // before 20s
+  var endTime = new Date(now.getTime() - 10 * 1000) // before 10s
+  var timer = Countdown.timer(endTime, function (timeLeft) {
+    t.ok(timeLeft.seconds * 1000 + startTime.getTime() < now.getTime(), 'Ticker value is always lower than now')
+  }, function () {
+    t.pass('custom start time test complete')
+  }, startTime)
+
+  t.end()
+})
